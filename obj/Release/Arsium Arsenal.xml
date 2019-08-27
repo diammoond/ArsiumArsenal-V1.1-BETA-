@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Arsium Arsenal
+</name>
+</assembly>
+<members>
+<member name="T:Winapps2.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources._402374_adobe_logo">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources._Error">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.adobe_photoshop_cc_security_patch_update_hacking">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.delete_delete_exit_1577">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.ENC5">
+<summary>
+  Recherche une ressource localisée de type System.Byte[].
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.folder">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.GeoIP">
+<summary>
+  Recherche une ressource localisée de type System.Byte[].
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.icon">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.Icon777">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.Intro">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.KEYS2019">
+<summary>
+  Recherche une chaîne localisée semblable à Professional:
+        NYWVH-HT4XC - R2WYW - 9Y3CM-X4V3Y
+
+Enterprise:
+        BF8Y8-GN2QH - T84XB - QVY3B - RC4DF.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.Lime_s_wallpaper">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.virus_icon_icons_com_76805">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Winapps2.My.Resources.Resources.xm">
+<summary>
+  Recherche une ressource localisée de type System.Byte[].
+</summary>
+</member>
+</members>
+</doc>

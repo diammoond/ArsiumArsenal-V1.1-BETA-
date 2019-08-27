@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DC14F64-1B6D-461D-9C19-03DC374C4A12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Winapps2.My.MyApplication</StartupObject>
+    <RootNamespace>Winapps2</RootNamespace>
+    <AssemblyName>Arsium Arsenal</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Arsium Arsenal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Arsium Arsenal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hacker %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\SRC FOR BP\MyProjectVBPerso23\TestStringEncryption\TestStringEncryption\bin\Debug\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Core, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>bin\Release\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>bin\Release\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>bin\Release\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Drawer">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.Drawer.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bunifu Ui WinForms v1.10.0.0\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib">
+      <HintPath>..\SRC FOR BP\Lime-RAT-master\Project\Server\obj\Debug\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\Project\_EXE\Release\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\Project\_EXE\Release\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI">
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\MyProjectVBPerso23\Arsium Downloader 2\Arsium Downloader 2\bin\Debug\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\packages\Mono.Cecil.0.10.0\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\packages\Mono.Cecil.0.10.0\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\packages\Mono.Cecil.0.10.0\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\Lime-RAT-master\packages\Mono.Cecil.0.10.0\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="nsoftware.IPWorksEncrypt">
+      <HintPath>..\..\..\..\..\..\Program Files\nsoftware\IPWorks Encrypt 2016 .NET Edition\lib\nsoftware.IPWorksEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="nsoftware.IPWorksEncrypt.System">
+      <HintPath>..\..\..\..\..\..\Program Files\nsoftware\IPWorks Encrypt 2016 .NET Edition\lib\nsoftware.IPWorksEncrypt.System.dll</HintPath>
+    </Reference>
+    <Reference Include="OC.Core, Version=2.0.0.17347, Culture=neutral, PublicKeyToken=21d5b409dafb75d2, processorArchitecture=MSIL">
+      <HintPath>bin\Release\OC.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OC.Core.Crypto, Version=1.4.13.38223, Culture=neutral, PublicKeyToken=21d5b409dafb75d2, processorArchitecture=MSIL">
+      <HintPath>bin\Release\OC.Core.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Material, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WindowsApp1\bin\Debug\Telerik.WinControls.Themes.Material.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.MaterialTeal, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WindowsApp1\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WindowsApp1\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WindowsApp1\bin\Debug\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TelerikCommon, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="VisualPlus">
+      <HintPath>..\..\..\..\Desktop\SRC FOR BP\MyProjectVBPerso23\Arsium Downloader 2\Arsium Downloader 2\bin\Debug\VisualPlus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassSett.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User+Reg\LicToRead.Designer.vb">
+      <DependentUpon>LicToRead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User+Reg\LicToRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User+Reg\Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User+Reg\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Classes\S_Client.vb" />
+    <Compile Include="LimeRat\Classes\S_Encryption.vb" />
+    <Compile Include="LimeRat\Classes\S_Functions.vb" />
+    <Compile Include="LimeRat\Classes\S_GeoIP.vb" />
+    <Compile Include="LimeRat\Classes\S_IconChanger.vb" />
+    <Compile Include="LimeRat\Classes\S_Messages.vb" />
+    <Compile Include="LimeRat\Classes\S_Settings.vb" />
+    <Compile Include="LimeRat\Classes\S_TcpListener.vb" />
+    <Compile Include="LimeRat\Forms\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\File Manager.Designer.vb">
+      <DependentUpon>File Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\File Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Floods.Designer.vb">
+      <DependentUpon>Floods.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Floods.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Intro.Designer.vb">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Intro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Keylogger.Designer.vb">
+      <DependentUpon>Keylogger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Keylogger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\OnConnect.Designer.vb">
+      <DependentUpon>OnConnect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\OnConnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Pass Recovery.Designer.vb">
+      <DependentUpon>Pass Recovery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Pass Recovery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Ransomware.Designer.vb">
+      <DependentUpon>Ransomware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Ransomware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Remote Desktop.Designer.vb">
+      <DependentUpon>Remote Desktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\Remote Desktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\System Manager.Designer.vb">
+      <DependentUpon>System Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\System Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimeRat\Forms\XMR.Designer.vb">
+      <DependentUpon>XMR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimeRat\Forms\XMR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RadFileD.Designer.vb">
+      <DependentUpon>RadFileD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RadFileD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User+Reg\UserFm.Designer.vb">
+      <DependentUpon>UserFm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User+Reg\UserFm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User+Reg\LicToRead.resx">
+      <DependentUpon>LicToRead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User+Reg\Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\File Manager.resx">
+      <DependentUpon>File Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Floods.resx">
+      <DependentUpon>Floods.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Intro.resx">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Keylogger.resx">
+      <DependentUpon>Keylogger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\OnConnect.resx">
+      <DependentUpon>OnConnect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Pass Recovery.resx">
+      <DependentUpon>Pass Recovery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Ransomware.resx">
+      <DependentUpon>Ransomware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\Remote Desktop.resx">
+      <DependentUpon>Remote Desktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\System Manager.resx">
+      <DependentUpon>System Manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimeRat\Forms\XMR.resx">
+      <DependentUpon>XMR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadFileD.resx">
+      <DependentUpon>RadFileD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User+Reg\UserFm.resx">
+      <DependentUpon>UserFm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\GeoIP.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ENC5.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_delete_exit_1577.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virus_icon-icons.com_76805.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\402374-adobe-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adobe-photoshop-cc-security-patch-update-hacking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hacker %281%29.ico" />
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\Icon7771.ico" />
+    <None Include="Resources\Icon777.ico" />
+    <None Include="Resources\KEYS2019.txt" />
+    <None Include="Resources\icon.ico" />
+    <None Include="Resources\xm.exe" />
+    <None Include="Resources\Lime%27s wallpaper.jpg" />
+    <None Include="Resources\Intro.wav" />
+    <None Include="Resources\Error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArsiumDownloader\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
